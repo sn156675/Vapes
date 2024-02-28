@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vape Produkte</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         table {
             width: 100%;
@@ -16,6 +17,15 @@
         }
         th {
             background-color: #f2f2f2;
+        }
+        .cta-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
     </style>
 </head>
@@ -46,8 +56,267 @@
     </tr>
 </table>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .product img {
+            max-width: 100px;
+            float: left;
+            margin-right: 10px;
+        }
+        .product h3 {
+            margin-top: 0;
+        }
+        .cart {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .cart h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vape Store</h1>
+    </header>
+    <div class="container">
+        <h2>Products</h2>
+        <div class="product">
+            <img src="vape1.jpg" alt="Vape 1">
+            <h3>Cherry Ice</h3>
+            <p>Compact and sleek design. Preis: $10.99</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 1', 10.99, 'quantity1')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape1.jpg" alt="Vape 1">
+            <h3>Strawberry Banana</h3>
+            <p>Compact and sleek design. Preis: $10.99</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 1', 10.99, 'quantity1')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape1.jpg" alt="Vape 1">
+            <h3>Blueberry Ice</h3>
+            <p>Compact and sleek design. Preis: $10.99</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 1', 10.99, 'quantity1')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape1.jpg" alt="Vape 1">
+            <h3>Ice Pop</h3>
+            <p>Compact and sleek design. Preis: $10.99</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 1', 10.99, 'quantity1')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape1.jpg" alt="Vape 1">
+            <h3>Cola Ice</h3>
+            <p>Compact and sleek design. Preis: $10.99</p>
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 1', 10.99, 'quantity1')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape2.jpg" alt="Vape 2">
+            <h3>Grape Ice</h3>
+            <p>Advanced features with temperature control. Preis: $16.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 16.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape2.jpg" alt="Vape 2">
+            <h3>Peach Ice</h3>
+            <p>Advanced features with temperature control. Preis: $16.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 16.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape2.jpg" alt="Vape 2">
+            <h3>Strawberry Redbull</h3>
+            <p>Advanced features with temperature control. Preis: $16.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 16.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape2.jpg" alt="Vape 2">
+            <h3>Pineapple Ice</h3>
+            <p>Advanced features with temperature control. Preis: $16.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 16.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape2.jpg" alt="Vape 2">
+            <h3>Apple Peach Pear</h3>
+            <p>Advanced features with temperature control. Preis: $16.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 16.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape3.jpg" alt="Vape 3">
+            <h3>Cherry Cola</h3>
+            <p>Advanced features with temperature control. Preis: $21.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 21.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape3.jpg" alt="Vape 3">
+            <h3>Pina Colada Rum</h3>
+            <p>Advanced features with temperature control. Preis: $21.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 21.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape3.jpg" alt="Vape 3">
+            <h3>Strawberry Ice</h3>
+            <p>Advanced features with temperature control. Preis: $21.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 21.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape3.jpg" alt="Vape 3">
+            <h3>Vimto</h3>
+            <p>Advanced features with temperature control. Preis: $21.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 21.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape3.jpg" alt="Vape 3">
+            <h3>Sour Apple</h3>
+            <p>Advanced features with temperature control. Preis: $21.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 21.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape4.jpg" alt="Vape 4">
+            <h3>Red Energy Ice</h3>
+            <p>Advanced features with temperature control. Preis: $26.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 26.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape4.jpg" alt="Vape 4">
+            <h3>Cherry Cola</h3>
+            <p>Advanced features with temperature control. Preis: $26.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 26.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape4.jpg" alt="Vape 4">
+            <h3>Strawberry Watermelon</h3>
+            <p>Advanced features with temperature control. Preis: $26.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 26.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape4.jpg" alt="Vape 4">
+            <h3>Blueberry Kiwi</h3>
+            <p>Advanced features with temperature control. Preis: $26.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 26.99, 'quantity2')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="vape4.jpg" alt="Vape 4">
+            <h3>Cotton Candy</h3>
+            <p>Advanced features with temperature control. Preis: $26.99</p>
+            <label for="quantity2">Anzahl:</label>
+            <input type="number" id="quantity2" name="Anzahl" value="1" min="1">
+            <button onclick="addToCart('Vape Pen 2', 26.99, 'quantity2')">Add to Cart</button>
+        </div>
+        
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productName, price, quantityInputId) {
+            var cartItems = document.getElementById("cartItems");
+            var total = document.getElementById("total");
+            var quantity = document.getElementById(quantityInputId).value;
+
+            var li = document.createElement("li");
+            li.textContent = productName + " - $" + (price * quantity).toFixed(2);
+            
+            var removeButton = document.createElement("button");
+            removeButton.textContent = "Remove";
+            removeButton.onclick = function() {
+                li.remove();
+                updateTotal();
+            };
+
+            li.appendChild(removeButton);
+            cartItems.appendChild(li);
+            updateTotal();
+        }
+
+        function updateTotal() {
+            var total = document.getElementById("total");
+            var cartItems = document.querySelectorAll("#cartItems li");
+            var sum = 0;
+
+            cartItems.forEach(function(item) {
+                var price = parseFloat(item.textContent.split(" - $")[1]);
+                sum += price;
+            });
+
+            total.textContent = sum.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+
+
 
 <a href="Startseite.html" class="cta-button">Zurück zur Startseite</a>
+<a href="Einkaufswagen.html" class="cta-button">Zum Einkaufswagen</a>
 </body>
 </html>
 
