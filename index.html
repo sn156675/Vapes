@@ -3,99 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vapes Webseite</title>
+    <title>Willkommen bei VapesWorld</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Stildefinitionen können in einer separaten CSS-Datei gespeichert werden -->
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        
         header {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
-        
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
-        
-        nav a {
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
         }
-        
-        nav a:hover {
-            text-decoration: underline;
+        nav ul li a:hover {
+            color: #ffc107;
         }
-        
         section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
+            padding: 50px 20px;
+            text-align: center;
         }
-        
+        section h2 {
+            color: #333;
+        }
+        .cta-button {
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #ffeb3b;
+        }
         footer {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px;
             position: fixed;
-            bottom: 0;
             width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1> Vape Kingdom</h1>
+        <h1>Willkommen bei Vape Kingdom</h1>
+        <nav>
+            <ul>
+                <li><a href="Startseite.html">Startseite</a></li>
+                <li><a href="Produkte.html">Unsere Produkte</a></li>
+                <li><a href="Über uns.html">Über uns</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="Startseite.html">Startseite</a>
-        <a href="Produkte.html">Produkte</a>
-        <a href="Über uns.html">Über uns</a>
-        <a href="Kontakt.html">Kontakt</a>
-    </nav>
-    
-    <section id="about">
-        <h2>Über Vapes</h2>
-        <p>Vapes sind elektronische Geräte, die zur Verdampfung von Flüssigkeiten wie E-Liquids verwendet werden. Sie bieten eine alternative Möglichkeit, Nikotin und andere Substanzen zu konsumieren, ohne die schädlichen Wirkungen des Rauchens von Tabak zu haben.</p>
+    <section id="home">
+        <h2>Entdecken Sie die Welt des Vapings</h2>
+        <p>Willkommen bei Vape Kingdom! Wir bieten eine breite Auswahl an hochwertigen Vapes und E-Liquids.</p>
+        <a href="Produkte.html" class="cta-button">Entdecken Sie unsere Produkte</a>
     </section>
-    
-    <section id="products">
-        <h2>Unsere Produkte</h2>
-        <div class="product">
-            <h3>Vape Produkt 1</h3>
-            <p>Beschreibung des Vape-Produkts 1.</p>
-            <p>Preis: $XX.XX</p>
-        </div>
-        <div class="product">
-            <h3>Vape Produkt 2</h3>
-            <p>Beschreibung des Vape-Produkts 2.</p>
-            <p>Preis: $XX.XX</p>
-        </div>
+    <section id="produkte">
+        <h2>Unsere beliebtesten Produkte</h2>
+        <!-- Hier können Produktbilder, Beschreibungen und Preise eingefügt werden -->
+        <a href="Produkte.html" class="cta-button">Jetzt shoppen</a>
     </section>
-    
-    <section id="about-us">
+    <section id="über">
         <h2>Über uns</h2>
-        <p>Wir sind ein Unternehmen, das hochwertige Vapes und Zubehör anbietet. Unser Ziel ist es, unseren Kunden die besten Produkte und den besten Service zu bieten.</p>
+        <p>Erfahren Sie mehr über unsere Firma und unsere Leidenschaft für das Vaping.</p>
+        <a href="Über uns.html" class="cta-button">Erfahren sie was Sie erwartet</a>
     </section>
-    
-    <section id="contact">
+    <section id="kontakt">
         <h2>Kontakt</h2>
-        <p>Du kannst uns unter folgender E-Mail-Adresse erreichen: info@vapes.de</p>
+        <p>Sie haben Fragen oder Anregungen? Kontaktieren Sie uns gerne!</p>
     </section>
-    
     <footer>
-        <p>&copy; 2024 Vapes Webseite. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 VapeWorld. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
